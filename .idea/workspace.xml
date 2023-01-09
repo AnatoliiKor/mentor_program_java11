@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4894af76-8e63-489d-9423-d1e91e479fff" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.application/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.application/src/main/java/jmp/application/MainApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.application/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.bank.api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.bank.api/src/main/java/jmp/bank/api/Bank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.bank.api/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.cloud.bank.impl/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.cloud.bank.impl/src/main/java/jmp/cloud/bank/impl/BankImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.cloud.bank.impl/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.cloud.service.impl/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.cloud.service.impl/src/main/java/jmp/cloud/service/impl/ServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.cloud.service.impl/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.dto/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/BankCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/BankCardType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/CreditBankCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/DebitBankCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/Subscription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.service.api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.service.api/src/main/java/jmp/service/api/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.service.api/src/main/java/module-info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="module-info" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2K508yd8ZMgzKz9jIFWrx4mWO6H" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/Anatolii_Kornienko/Desktop/MENTOR PROGRAM/2 Java 8, 9, 10, 11/Idea/m1java11/pom.xml",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.kornienko" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jmp.application.MainApplication" />
+      <module name="jmp.application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jmp.application.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4894af76-8e63-489d-9423-d1e91e479fff" name="Changes" comment="" />
+      <created>1673248983159</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673248983159</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
