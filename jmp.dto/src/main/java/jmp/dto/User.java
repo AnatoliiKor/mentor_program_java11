@@ -13,4 +13,13 @@ public class User {
         this.surname = surname;
         this.birthday = birthday;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", birthday=" + birthday +
+                '}';
+    }
 }

@@ -4,23 +4,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <dependencies>
-        <dependency>
-            <groupId>com.kornienko.jmp.service.api</groupId>
-            <artifactId>jmp.service.api</artifactId>
-            <version>1.0</version>
-            <scope>compile</scope>
-        </dependency>
-    </dependencies>
 
     <parent>
-        <groupId>com.kornienko.m1java11</groupId>
+        <groupId>jmp.dtom1java11</groupId>
         <artifactId>m1java11</artifactId>
         <version>1.0</version>
     </parent>
 
 
-    <groupId>com.kornienko.jmp.dto</groupId>
+    <groupId>jmp.dtojmp.dto</groupId>
     <artifactId>jmp.dto</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>

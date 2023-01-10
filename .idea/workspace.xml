@@ -4,37 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4894af76-8e63-489d-9423-d1e91e479fff" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.application/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.application/src/main/java/jmp/application/MainApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.application/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.bank.api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.bank.api/src/main/java/jmp/bank/api/Bank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.bank.api/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.cloud.bank.impl/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.cloud.bank.impl/src/main/java/jmp/cloud/bank/impl/BankImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.cloud.bank.impl/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.cloud.service.impl/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.cloud.service.impl/src/main/java/jmp/cloud/service/impl/ServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.cloud.service.impl/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.dto/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/BankCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/BankCardType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/CreditBankCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/DebitBankCard.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/Subscription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.service.api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.service.api/src/main/java/jmp/service/api/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmp.service.api/src/main/java/module-info.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="4894af76-8e63-489d-9423-d1e91e479fff" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/jmp.cloud.bank.impl/src/main/java/jmp/cloud/bank/impl/CardNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jmp.cloud.service.impl/src/main/java/jmp/cloud/service/impl/SubscriptionNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.application/src/main/java/jmp/application/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.application/src/main/java/jmp/application/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.bank.api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.bank.api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.cloud.bank.impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.cloud.bank.impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.cloud.bank.impl/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.cloud.bank.impl/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.cloud.service.impl/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.cloud.service.impl/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.cloud.service.impl/src/main/java/jmp/cloud/service/impl/ServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.cloud.service.impl/src/main/java/jmp/cloud/service/impl/ServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.cloud.service.impl/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.cloud.service.impl/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.dto/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.dto/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/BankCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/BankCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/CreditBankCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/CreditBankCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/DebitBankCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/DebitBankCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/Subscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/Subscription.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.service.api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.service.api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,18 +54,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Anatolii_Kornienko/Desktop/MENTOR PROGRAM/2 Java 8, 9, 10, 11/Idea/m1java11/pom.xml",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Anatolii_Kornienko/Desktop/MENTOR PROGRAM/2 Java 8, 9, 10, 11/Idea/m1java11/pom.xml&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.kornienko" />
@@ -111,6 +100,14 @@
       <option name="presentableId" value="Default" />
       <updated>1673248983159</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1673278884669</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673278884669</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,5 +123,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/jmp.cloud.bank.impl/src/main/java/jmp/cloud/bank/impl/CardNotFoundException.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

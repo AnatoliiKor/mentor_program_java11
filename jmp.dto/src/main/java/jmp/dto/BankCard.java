@@ -5,22 +5,13 @@ import java.util.List;
 
 public class BankCard {
 
-    private String number;
-    private User user;
-    private static final List<BankCard> CARD_LIST = new ArrayList<>();
-
-    public BankCard(User user) {
-        this.user = user;
-        var number = CARD_LIST.size() + 1;
-        this.number = String.valueOf(number);
-        CARD_LIST.add(this);
-
-    }
+    String number;
+    User user;
+    static final List<BankCard> CARD_LIST = new ArrayList<>();
 
     public String getNumber() {
         return number;
     }
-
 
     public User getUser() {
         return user;
@@ -30,5 +21,11 @@ public class BankCard {
         return CARD_LIST;
     }
 
-
+    @Override
+    public String toString() {
+        return "BankCard{" +
+                "number='" + number + '\'' +
+                ", user=" + user +
+                '}';
+    }
 }
