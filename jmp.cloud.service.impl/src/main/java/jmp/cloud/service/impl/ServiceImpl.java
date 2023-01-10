@@ -21,22 +21,28 @@ public class ServiceImpl implements Service {
 
     @Override
     public Optional<Subscription> getSubscriptionByBankCardNumber(String cardNumber) {
-        return Subscription.getSubscriptions().stream().filter(s -> s.getBankcardNumber().equals(cardNumber)).findFirst();
+        return Subscription.getSubscriptions().stream()
+                .filter(s -> s.getBankcardNumber().equals(cardNumber))
+                .findFirst();
     }
 
     @Override
     public List<User> getAllUsers() {
-        return BankCard.getCardList().stream().map(BankCard :: getUser).collect(Collectors.toUnmodifiableList());
+        return BankCard.getCardList().stream()
+                .map(BankCard :: getUser)
+                .collect(Collectors.toUnmodifiableList());
     }
 
     @Override
     public List<Subscription> getAllSubscriptionsByCondition(Predicate<Subscription> condition) {
-        var list = Subscription.getSubscriptions().stream().filter(condition).collect(Collectors.toList());
-        return list;
+        return Subscription.getSubscriptions().stream()
+                .filter(condition)
+                .collect(Collectors.toList());
     }
 
     private boolean isCardSubscribed(BankCard card) {
-        return Subscription.getSubscriptions().stream().anyMatch(subscription -> subscription.getBankcardNumber().equals(card.getNumber()));
+        return Subscription.getSubscriptions().stream()
+                .anyMatch(subscription -> subscription.getBankcardNumber().equals(card.getNumber()));
     }
 
     public static void printAllEntities() {

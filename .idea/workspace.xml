@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4894af76-8e63-489d-9423-d1e91e479fff" name="Changes" comment="4 stars">
-      <change afterPath="$PROJECT_DIR$/jmp.cloud.bank.impl/src/main/java/jmp/cloud/bank/impl/NewBankImpl.java" afterDir="false" />
+    <list default="true" id="4894af76-8e63-489d-9423-d1e91e479fff" name="Changes" comment="before ServiceLoader">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jmp.application/src/main/java/jmp/application/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.application/src/main/java/jmp/application/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmp.cloud.service.impl/src/main/java/jmp/cloud/service/impl/ServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.cloud.service.impl/src/main/java/jmp/cloud/service/impl/ServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/Subscription.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/Subscription.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jmp.service.api/src/main/java/jmp/service/api/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.service.api/src/main/java/jmp/service/api/Service.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673349723996</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="before ServiceLoader">
+      <created>1673362868286</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673362868286</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,7 +124,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="4 stars" />
-    <option name="LAST_COMMIT_MESSAGE" value="4 stars" />
+    <MESSAGE value="before ServiceLoader" />
+    <option name="LAST_COMMIT_MESSAGE" value="before ServiceLoader" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -138,11 +142,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/jmp.application/src/main/java/jmp/application/MainApplication.java</url>
-          <line>60</line>
-          <properties>
-            <option name="lambda-ordinal" value="0" />
-          </properties>
-          <option name="timeStamp" value="15" />
+          <line>44</line>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

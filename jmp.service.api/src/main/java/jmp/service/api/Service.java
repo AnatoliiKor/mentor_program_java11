@@ -20,6 +20,7 @@ public interface Service {
 
     List<Subscription> getAllSubscriptionsByCondition(Predicate<Subscription> condition);
 
+    // Add a new default method for Service interface, which uses getAllUsers. Use LocalDate.now(), ChronoUnit and mapToLong
     default double getAverageUsersAge() {
         return getAllUsers()
                 .stream()
@@ -28,6 +29,7 @@ public interface Service {
                 .orElse(-1);
     }
 
+    // Add a new static method for Service interface, which returns true, if the user is over 18 years old
     static boolean isPayableUser(User user) {
         var age = ChronoUnit.YEARS.between(user.getBirthday(), LocalDate.now());
         return age >= 18;
