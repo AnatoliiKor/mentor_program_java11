@@ -1,4 +1,4 @@
-package jmp.cloud.service.impl;
+package jmp.service.api;
 
 public class SubscriptionNotFoundException extends RuntimeException{
 

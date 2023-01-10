@@ -8,7 +8,9 @@ import jmp.service.api.Service;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Predicate;
+import java.util.function.Supplier;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class ServiceImpl implements Service {
 
@@ -28,9 +30,21 @@ public class ServiceImpl implements Service {
 
     @Override
     public List<User> getAllUsers() {
-        return BankCard.getCardList().stream()
-                .map(BankCard :: getUser)
+        var cardNumbers = Subscription.getSubscriptions().stream()
+                .map(Subscription::getBankcardNumber)
                 .collect(Collectors.toUnmodifiableList());
+
+        Supplier<Stream<BankCard>> sup = () -> BankCard.getCardList().stream();
+
+        var subscribedUsers = cardNumbers.stream()
+                .map(number ->
+                        sup.get().filter(bankCard -> number.equals(bankCard.getNumber()))
+                                .findFirst()
+                                .orElseThrow(() -> new RuntimeException("This is wrong number"))
+                                .getUser())
+                .collect(Collectors.toSet());
+
+        return List.copyOf(subscribedUsers);
     }
 
     @Override
@@ -44,12 +58,4 @@ public class ServiceImpl implements Service {
         return Subscription.getSubscriptions().stream()
                 .anyMatch(subscription -> subscription.getBankcardNumber().equals(card.getNumber()));
     }
-
-    public static void printAllEntities() {
-        System.out.println("-----------------------ALL ENTITIES------------------------");
-        BankCard.getCardList().forEach(System.out :: println);
-        Subscription.getSubscriptions().forEach(System.out :: println);
-        System.out.println("-----------------------------------------------");
-    }
-
 }

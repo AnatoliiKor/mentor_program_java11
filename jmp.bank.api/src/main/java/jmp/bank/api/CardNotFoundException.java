@@ -1,4 +1,4 @@
-package jmp.cloud.bank.impl;
+package jmp.bank.api;
 
 public class CardNotFoundException extends RuntimeException{
 

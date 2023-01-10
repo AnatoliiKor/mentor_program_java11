@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4894af76-8e63-489d-9423-d1e91e479fff" name="Changes" comment="before ServiceLoader">
+    <list default="true" id="4894af76-8e63-489d-9423-d1e91e479fff" name="Changes" comment="with comments">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/jmp.application/src/main/java/jmp/application/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.application/src/main/java/jmp/application/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jmp.service.api/src/main/java/jmp/service/api/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.service.api/src/main/java/jmp/service/api/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.application/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.application/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.cloud.bank.impl/src/main/java/jmp/cloud/bank/impl/CardNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.bank.api/src/main/java/jmp/bank/api/CardNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.cloud.bank.impl/src/main/java/jmp/cloud/bank/impl/NewBankImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.cloud.bank.impl/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.cloud.bank.impl/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.cloud.service.impl/src/main/java/jmp/cloud/service/impl/ServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.cloud.service.impl/src/main/java/jmp/cloud/service/impl/ServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.cloud.service.impl/src/main/java/jmp/cloud/service/impl/SubscriptionNotFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.service.api/src/main/java/jmp/service/api/SubscriptionNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.cloud.service.impl/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.cloud.service.impl/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/CreditBankCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/CreditBankCard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/DebitBankCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/DebitBankCard.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +61,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="jmp.bank.api" />
       <recent name="jmp.cloud.bank.impl" />
       <recent name="com.kornienko" />
     </key>
@@ -106,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673362868286</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="with comments">
+      <created>1673364132480</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1673364132480</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,25 +142,26 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="4 stars" />
     <MESSAGE value="before ServiceLoader" />
-    <option name="LAST_COMMIT_MESSAGE" value="before ServiceLoader" />
+    <MESSAGE value="with comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="with comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jmp.cloud.bank.impl/src/main/java/jmp/cloud/bank/impl/CardNotFoundException.java</url>
+          <url>file://$PROJECT_DIR$/jmp.bank.api/src/main/java/jmp/bank/api/CardNotFoundException.java</url>
           <line>5</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/jmp.cloud.service.impl/src/main/java/jmp/cloud/service/impl/ServiceImpl.java</url>
-          <line>34</line>
+          <line>51</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/jmp.application/src/main/java/jmp/application/MainApplication.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="16" />
+          <url>file://$PROJECT_DIR$/jmp.dto/src/main/java/jmp/dto/BankCard.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
