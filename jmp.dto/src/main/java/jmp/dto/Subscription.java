@@ -20,6 +20,10 @@ public class Subscription {
         return bankcardNumber;
     }
 
+    public LocalDate getStartDate() {
+        return startDate;
+    }
+
     public static List<Subscription> getSubscriptions() {
         return SUBSCRIPTIONS;
     }

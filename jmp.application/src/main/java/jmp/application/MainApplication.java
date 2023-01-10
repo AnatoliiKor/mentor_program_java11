@@ -14,14 +14,12 @@ import jmp.service.api.Service;
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 
 public class MainApplication {
+    private static Map<Integer, User> users;
+
     public static void main(String[] args) {
-        Map<Integer, User> users = new HashMap<>();
-        users.put(1, new User("Julie", "Fox", LocalDate.of(1980, 3, 15)));
-        users.put(2, new User("Andriy", "Ivanov", LocalDate.of(1995, 6, 11)));
-        users.put(3, new User("Ivan", "Younger", LocalDate.of(2015, 1, 25)));
+        Map<Integer, User> users = initiateUsers();
 
         Bank bank = new BankImpl();
         Service service = new ServiceImpl();
@@ -31,22 +29,45 @@ public class MainApplication {
         bank.createBankCard(users.get(1), BankCardType.CREDIT);
         bank.createBankCard(users.get(3), BankCardType.CREDIT);
 
-        BankCard card = BankCard.getCardList().stream().findAny().orElseThrow(() -> new CardNotFoundException("Card not found"));
+        BankCard.getCardList().forEach(service::subscribe);
 
-        service.subscribe(card);
+        BankCard card = BankCard.getCardList().stream()
+                .findAny()
+                .orElseThrow(() -> new CardNotFoundException("Card not found"));
+
         try {
-            Subscription subscription = service.getSubscriptionByBankCardNumber(card.getNumber()).orElseThrow(() -> new SubscriptionNotFoundException("Subscription not found"));
+            Subscription subscription = service
+                    .getSubscriptionByBankCardNumber(card.getNumber())
+                    .orElseThrow(() -> new SubscriptionNotFoundException("Subscription not found"));
             System.out.println("new subscription: " + subscription);
-            Subscription subscriptionWithError = service.getSubscriptionByBankCardNumber("4654").orElseThrow(() -> new SubscriptionNotFoundException("Subscription not found"));
-        } catch (RuntimeException e) {
+
             System.out.println("------Subscription with wrong card number-------");
+            service.getSubscriptionByBankCardNumber("4654")
+                    .orElseThrow(() -> new SubscriptionNotFoundException("Subscription not found"));
+        } catch (RuntimeException e) {
             System.out.println(e.getMessage());
             System.out.println("-------------");
         }
 
-        service.getAllUsers().forEach(System.out :: println);
+        service.getAllUsers().forEach(System.out::println);
+        Service.isPayableUser(users.get(2));
+        System.out.printf("Average age of users is %4.1f years %n", service.getAverageUsersAge());
 
-
+        users.forEach((key, value) ->
+                System.out.printf("Is %s payable? %b. %n", value.getName() + " " + value.getSurname(), Service.isPayableUser(value)));
         ServiceImpl.printAllEntities();
+
+        var timePoint = LocalDate.of(2023, 1, 10);
+        service.getAllSubscriptionsByCondition(subscription -> subscription.getStartDate().isBefore(timePoint))
+                .forEach(System.out::println);
+    }
+
+    private static Map<Integer, User> initiateUsers() {
+        Map<Integer, User> users = new HashMap<>();
+        users.put(1, new User("Julie", "Fox", LocalDate.of(1980, 3, 15)));
+        users.put(2, new User("Andriy", "Ivanov", LocalDate.of(1995, 6, 11)));
+        users.put(3, new User("Ivan", "Younger", LocalDate.of(2015, 1, 25)));
+        users.put(3, new User("Olga", "Budko", LocalDate.of(1970, 11, 1)));
+        return users;
     }
 }

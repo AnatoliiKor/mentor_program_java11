@@ -7,6 +7,7 @@ import jmp.service.api.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class ServiceImpl implements Service {
@@ -25,21 +26,24 @@ public class ServiceImpl implements Service {
 
     @Override
     public List<User> getAllUsers() {
-        return BankCard.getCardList().stream().map(BankCard :: getUser).collect(Collectors.toList());
+        return BankCard.getCardList().stream().map(BankCard :: getUser).collect(Collectors.toUnmodifiableList());
+    }
+
+    @Override
+    public List<Subscription> getAllSubscriptionsByCondition(Predicate<Subscription> condition) {
+        var list = Subscription.getSubscriptions().stream().filter(condition).collect(Collectors.toList());
+        return list;
     }
 
     private boolean isCardSubscribed(BankCard card) {
         return Subscription.getSubscriptions().stream().anyMatch(subscription -> subscription.getBankcardNumber().equals(card.getNumber()));
     }
 
-    private BankCard getBankCardByNumber(String number) {
-        return BankCard.getCardList().stream().filter(card -> card.getNumber().equals(number)).findFirst().orElse(null);
-    }
-
     public static void printAllEntities() {
         System.out.println("-----------------------ALL ENTITIES------------------------");
         BankCard.getCardList().forEach(System.out :: println);
         Subscription.getSubscriptions().forEach(System.out :: println);
+        System.out.println("-----------------------------------------------");
     }
 
 }
